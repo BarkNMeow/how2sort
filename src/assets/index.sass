@@ -19,6 +19,10 @@ body, #root
     width: 100%
     height: 100%
 
+#root
+    display: flex
+    flex-direction: column
+
 select
     padding: 3px
     border: 1px solid $input-border
@@ -42,3 +46,8 @@ select
 
     &:hover, &.active
         color: color.scale($button, $blackness: 50%)
+
+.sort-container
+    flex-grow: 1
+    display: flex
+    flex-direction: column

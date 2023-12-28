@@ -4,7 +4,7 @@ import { Setter, SortType } from "./type"
 import './assets/header.sass'
 
 interface HeaderProp {
-    sortType: SortType[]
+    sortType: SortType[][]
     addSort: Setter<SortType>
 }
 
@@ -77,7 +77,6 @@ function AddSort({ sortType, addSort, closePanel }: AddSortProp) {
 
     function onSortBtnClick(stype: SortType) {
         addSort(stype)
-        closePanel()
     }
 
     return (
