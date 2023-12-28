@@ -1,0 +1,44 @@
+@use 'sass:color'
+@use './colors' as *
+
+@import 'bootstrap-icons/font/bootstrap-icons.css'
+
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+html
+    width: 100vw
+    height: 100vh
+
+    background: $background
+    color: $text
+
+body, #root
+    width: 100%
+    height: 100%
+
+select
+    padding: 3px
+    border: 1px solid $input-border
+    border-radius: 3px
+
+    background: inherit
+    color: inherit
+    font-size: inherit
+
+.icon-btn
+    cursor: pointer
+
+    padding: 4px .8rem
+    background: none
+    border: none
+
+    color: $button
+    font-size: 1.5rem
+
+    transition-duration: .2s
+
+    &:hover, &.active
+        color: color.scale($button, $blackness: 50%)
